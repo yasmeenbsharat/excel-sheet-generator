@@ -18,7 +18,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="mt-4 text-center">
+    <div class="my-4 text-center">
         <form>
             <div class="mb-3">
               <label for="rows" class="form-label text-warning fw-bolder fs-5">Number Of Rows</label>
@@ -29,10 +29,16 @@
               <input type="text" class="form-control w-25  m-auto" id="columns">
             </div>
           
-            <button type="submit" class="btn btn-warning ">Generate</button>
-            <button type="submit" class="btn btn-warning  ms-2">Export</button>
+            <button type="submit" class="btn btn-warning" id="generate">Generate</button>
+            <button type="submit" class="btn btn-warning ms-2" id="export">Export</button>
           </form>
     </div>
-  
+    <table class="mt-5 m-auto" cellspacing="6px" >
+      <tbody id="table">
+
+      </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tableexport/5.0.2/js/tableexport.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
